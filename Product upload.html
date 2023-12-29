@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Listing Form</title>
+    <link rel="stylesheet" type="text/css" href="product.css">
+</head>
+<body>
+        <!--------------------------Product listing form--------------- -->
+    </nav>
+    <h1>Product Listing Form</h1>
+    <form method="post" action="/add_product">
+        <label for="picture">Picture of the Product:</label>
+        <input type="file" id="picture" name="picture" accept="image/*" required><br>
+        
+
+        <label for="title">Title of the Product:</label>
+        <input type="text" id="title" name="title" required><br>
+
+        <label for="description">Description of the Product:</label>
+        <textarea id="description" name="description" required></textarea><br>
+
+        <label for="category">Category of the Product:</label>
+        <input type="text" id="category" name="category" required><br>
+
+        <label for="price">Price of the Product:</label>
+        <input type="number" id="price" name="price" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

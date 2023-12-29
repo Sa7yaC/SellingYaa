@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+</head>
+<body>
+    <style>
+        /* Style the form container */
+form {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+*{
+    padding-top: 3rem;
+    font-family: 'Outfit', sans-serif;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: #01aeff;
+}
+/* Style input fields */
+input[type="text"] {
+  width: 93%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  width: 100%;
+  background: #01aeff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Add a hover effect to the submit button */
+input[type="submit"]:hover {
+  background: black;
+}
+
+    </style>
+    <div class="title">Payment Gateway</div>
+    <form action="/process_payment" method="post">
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="hostel" placeholder="Hostel Block">
+        <input type="text" name="email" placeholder="Email">
+        <input type="text" name="mobilenumber" placeholder="Mobile Number">
+        <input type="text" name="upi" placeholder="UPI ID">
+        <input type="submit" value="Submit">
+      </form>
+    <script>
+        const stripe = Stripe('pk_test_51O2dHVSIcsTIQQ2WDGBs9EpN7FNUyPqtCNzMfqewCrQxjQ7d4tF6nQPBML5OJrhw3YldEZhDAautEmdmprVCB2lz005DeCoxwq');
+
+        const appearance = { /* appearance */ };
+        const options = { /* options */ };
+        const elements = stripe.elements({ clientSecret, appearance });
+        const paymentElement = elements.create('payment', options);
+        paymentElement.mount('#payment-element');
+
+    </script>
+</body>
+</html>

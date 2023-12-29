@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+
+}/* Reset some default browser styles */
+body, nav, ul, li, a, img, input, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Style the navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+/* Style the left section with links */
+.left {
+    flex: 1;
+}
+
+.left a {
+    color: black;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Style the center section with the logo */
+.center {
+    flex: 0.5;
+    text-align: center;
+}
+
+.center img {
+    max-width: 8rem;
+    padding-top: 10px;
+}
+
+/* Style the right section with the search input and button */
+.right {
+    flex: 1;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.right input {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.right button {
+
+    background-color: #01aeff;
+    color: #fff;
+    padding: 11px 15px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.right button:hover {
+    background-color: black;
+}
+.user{
+    background-image: url(/Photos/user.png);    
+    align-items: center;
+}
+.login button{
+    background-color: #01aeff;
+    color: #fff;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login button:hover {
+    background-color: black;
+}
+/* -----------------------------------------------------Banner----------------------- */
+div.banner{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 27rem;
+
+}
+.image{
+    background-image: url(/Photos/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.393) 5px 5px 20px;
+}
+.desc{
+    margin: 2rem;
+    padding: 2rem;
+    font-size: 3rem;
+    padding-top: 7rem;
+    font-family: 'Outfit', sans-serif;
+    color: #01aeff;
+}
+/* ------------------------------------------------Product box---------------------- */
+.productsbox{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    margin: 2rem;
+}
+.box{
+    margin: 2rem;
+}
+.div1{
+    display: grid;
+    grid-template-rows: 15rem 1.3rem 1.3rem;
+    grid-template-columns: 100%;
+    cursor: pointer;
+}
+.productpic{
+    margin: 1rem;
+    /* background-image: url(/Photos/laptop`.jfif); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.buy{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.buybtn{
+    background-color: #01aeff;
+    color: white;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.products{
+    text-align: center;
+    color: rgb(0, 153, 255);
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+/* -------------------------------------------------------------------------------footer----------------------------------------------------------------- */
+
+.footer{
+    margin-top: 7rem;
+    display: grid;
+    /* grid-template-columns: 300px 400px 647px; */
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+    background-color:black;
+    height: 14rem;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+  }
+  
+  #footerImage{
+    text-align: center;
+  }
+  
+  .footer-text{
+    font-family: "Nunito Sans", sans-serif;
+    color: white;
+    position: relative;
+    bottom:1rem;
+    /* padding-left: 16px;
+    padding-bottom: 10px; */
+    font-size: 1rem;
+  }
+  .quicklink{
+    color: rgb(255, 255, 255);
+    padding-left: 10rem;
+    display: list-item;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    padding-left: 5rem;
+    list-style: none;
+    /* padding-top: 0.9rem;
+    padding-bottom: 10px; */
+  
+  }
+  .quicklink li a{
+    display: list-item;
+    padding: 2px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3px;
+  }
+  .quicklink li a:hover{
+    color: rgb(255, 255, 255);
+  }
+  .email b{
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem; 
+    padding-bottom: 10px;
+    padding-left: 0.5rem;
+  }
+  .email{
+    padding-top: 1rem;
+    padding-left: 3rem;
+  }
+  .email input{
+    height: 25px;
+    width: 400px;
+    margin: 7px;
+    border-radius: 7px;
+    border: white;
+    padding: 10px;
+    padding-top: 10px;
+  
+  }
+  .logoforfoot{
+    height: 7rem;
+    width: auto;
+    /* padding-top: 1.6rem;
+    padding-left: 1.2rem;
+    padding-bottom: 0.4rem; */
+  }
+  button.subscribe1{
+    background-color: #01aeff;
+    color: #fff;
+    padding: 11px 15px;
+    border: none;
+    height: 2.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+}

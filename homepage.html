@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellingYaa | Home Page</title>
+    <link href="homepage.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar display-flex">
+        <div class="nav-left">
+            <img id="logo" src="/Photos/logo-no-background.png" alt="Logo" height="60" width="100">
+        </div>
+        <div class="nav-items nav-right display-flex">
+            <div class="dropdown">
+                <button onclick="dropdownFunc('myDropdown1')" class="nav-values dropbtn btn">Buy Products</button>
+                <div id="myDropdown1" class="dropdown-content">
+                    <a href="#">Electronics</a>
+                    <a href="#">Stationaries</a>
+                    <a href="#">Groceries</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="dropdownFunc('myDropdown2')" class="nav-values dropbtn btn">Sell Products</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a href="#">Electronics</a>
+                    <a href="#">Stationaries</a>
+                    <a href="#">Groceries</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button onclick="dropdownFunc('myDropdown3')" class="nav-values dropbtn btn">About</button>
+            </div>
+            <div class="nav-values btn " id="login">Login or SignUp</div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="bannerphoto">Discover, Buy, and Sell<br> Within Your College</div>
+    </div>
+    <!-- ------- -->
+    <div class="products">Explore the products
+    </div>
+    <div class="productsbox">
+            <div class="box">
+                <div class="div1">
+                    <div class="productpic"></div>
+                    <div class="pricename">
+                        <div class="price">₹40,000</div>
+                        <div class="name">Dell Inspiron Laptop</div>
+                    </div>
+                    <div class="lastsectionbox">
+                        <div class="category2">Electronics</div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="productpic2"></div>
+                    <div class="pricename">
+                        <div class="price">₹1,200</div>
+                        <div class="name"> Cotton Mattress</div>
+                    </div>
+                    <div class="lastsectionbox">
+                        <div class="category2">Accesories</div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="productpic3"></div>
+                    <div class="pricename">
+                        <div class="price">₹8,000</div>
+                        <div class="name">Avon Geared Cycle</div>
+                    </div>
+                    <div class="lastsectionbox">
+                        <div class="category2">Vehicle</div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="productpic4"></div>
+                    <div class="pricename">
+                        <div class="price">₹600</div>
+                        <div class="name">Pack of 6 Notebooks </div>
+                    </div>
+                    <div class="lastsectionbox">
+                        <div class="category2">Stationaries</div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- ---------------------------------Footer-------------------------------------- -->
+    <footer class="footer">
+        <div class="footer-left">
+          <div id="footerImage">
+            <img src="/Photos/logo-no-background.png" class="logoforfoot" height="80" width="80">
+          </div>
+          <div class="footer-text">Discover. Shop. Connect.
+            <br>Your Campus Marketplace – Where Students Thrive
+          </div>
+        </div>
+        <ul class="quicklink">
+          <b>Quick links</b>
+          <li><a href="#">Sell Items</a></li>
+          <li><a href="#">Buy Items</a></li>
+        </ul>
+        <div class="email">
+          <div><b>Subscribe for notifications</b></div>
+          <input class="subscribe" placeholder="Enter your email">
+          <button id="Subscribe2">Subscribe</button>
+        </div>
+      </footer>
+    <script>
+        function dropdownFunc(dropdownId) {
+            var dropdown = document.getElementById(dropdownId);
+            dropdown.classList.toggle("show");
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>
